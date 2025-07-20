@@ -15,9 +15,11 @@
         "label": "main",
         "title": "Dominara",
         "fullscreen": true,
-        "resizable": false,
+        "resizable": true,
         "decorations": false,
-        "visible": true
+        "visible": true,
+        "minWidth": 1200,
+        "minHeight": 800
       }
     ],
     "security": {
