@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "dominara",
+  "version": "0.1.0",
+  "identifier": "com.dominara.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "dominara",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "plugins": {
+      "updater": {
+        "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDg5MDI0QTY2NjY4MDM4OTAKUldTUU9JQm1aa29DaVh3NzdCWEREOVVHVTQxS01GYTdqT3NUdERQaEttM0FxU3VGbUorUHBsNFAK",
+        "endpoints": [
+          "https://releases.myapp.com/{{target}}/{{arch}}/{{current_version}}",
+          "https://github.com/user/repo/releases/latest/download/latest.json"
+        ],
+        "windows": {
+          "installMode": "quiet"
+        }
+      }
+    }
+  }
+}
