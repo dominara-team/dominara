@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Auth from "./auth/Auth";
-import Lobby from "./lobby/Lobby";
-import Updater from "./updater/Updater";
+import Auth from "./Auth/Auth";
+import Lobby from "./Lobby/Lobby";
+import Updater from "./Updater/Updater";
 import { ReactElement } from "react";
 
 export default function AppRoutes(): ReactElement {
