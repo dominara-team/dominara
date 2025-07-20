@@ -12,9 +12,12 @@
   "app": {
     "windows": [
       {
-        "title": "dominara",
-        "width": 800,
-        "height": 600
+        "label": "main",
+        "title": "Dominara",
+        "fullscreen": true,
+        "resizable": false,
+        "decorations": false,
+        "visible": true
       }
     ],
     "security": {
@@ -37,7 +40,7 @@
     "updater": {
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDg5MDI0QTY2NjY4MDM4OTAKUldTUU9JQm1aa29DaVh3NzdCWEREOVVHVTQxS01GYTdqT3NUdERQaEttM0FxU3VGbUorUHBsNFAK",
       "endpoints": [
-        "https://github.com/dominara.team/dominara/releases/latest/download/latest.json"
+        "https://github.com/dominara-team/dominara/releases/latest/download/latest.json"
       ],
       "windows": {
         "installMode": "quiet"
